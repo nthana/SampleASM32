@@ -10,7 +10,7 @@ MessageBoxA PROTO,
     style:DWORD
 
 ;   Or use the alternative declarations belows: 
-;   (If used these, also need to edited the call statements' proc names)
+;   (If used these, also need to edited the "call" instructions' proc names)
 ; extern ExitProcess@4 : PROC
 ; extern MessageBoxA@16 : PROC
 
@@ -35,4 +35,4 @@ main PROC
 	call ExitProcess        ; Or call ExitProcess@4
 main ENDP
 
-END main        ;specify the program's entry point
+END main        ;specifying the program's entry point
